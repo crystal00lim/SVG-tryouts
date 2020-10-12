@@ -35,7 +35,7 @@
   <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
   <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
 </svg>
-<!-- element g stands for graphic, only takes in path element. path element has h=horizontal componenet and v=vertical components. m=move causes the d=dot to move according to the amount of pixels you write:. -->
+<!-- element g stands for graphic, only takes in path element. path element has h=horizontal componenet and v=vertical components. m=move causes the d=dot to move according to the amount of pixels you write:. C=curve (x1 y1, x2 y2, x y)-->
 <svg>
   <path d="M 10 10 h 80 v 80 h -80 Z" fill="transparent" stroke="black"/>
 </svg>
@@ -44,7 +44,12 @@
   <path d="M 10 10 h 80 v 80" fill="transparent" stroke="black"/>
 </svg>
 <svg>
+  <g id="first">
   <path d="M 10 10 h 80 v 80 C 80 40, 40 80, 10 10 z" fill="transparent" stroke="black"/>
+  </g>
+  <g id="second">
+    <path d="M 10 10 h 80 v 80 C 80 40, 80 80, 10 10 z" fill="transparent" stroke="black"/>
+  </g>
 </svg>
   </body>
 </html>
